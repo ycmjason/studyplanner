@@ -6,6 +6,19 @@ REVISION_START_DATE = datetime.date(2016, 3, 28)
 
 TURBO_MODE_DAYS = 4
 
+exams = [
+("C220=MC220", "Software Engineering Design",             "25-Apr"),
+("C202=MC202", "Software Engineering - Algorithms",       "26-Apr"),
+("C211=MC211", "Operating Systems",                       "28-Apr"),
+("C245",       "Statistics",                              "29-Apr"),
+("C223=MC223", "Concurrency",                             "3-May"),
+("C240=MC240", "Models of Computation",                   "4-May"),
+("C231=MC231", "Introduction to Artificial Intelligence", "6-May"),
+("C212",       "Networks and Communications",             "10-May"),
+("C233",       "Computational Techniques",                "12-May"),
+("C221=MC221", "Compilers",                               "16-May")
+]
+
 # END: confiuration #
 
 CURR_YEAR = datetime.date.today().year
@@ -100,18 +113,6 @@ class RevisionCounters:
         for counter in filter(lambda counter: counter.exam.code==revisedExam.code, self.counters):
             counter.inc()
 
-exams = [
-("C220=MC220", "Software Engineering Design",             "25-Apr"),
-("C202=MC202", "Software Engineering - Algorithms",       "26-Apr"),
-("C211=MC211", "Operating Systems",                       "28-Apr"),
-("C245",       "Statistics",                              "29-Apr"),
-("C223=MC223", "Concurrency",                             "3-May"),
-("C240=MC240", "Models of Computation",                   "4-May"),
-("C231=MC231", "Introduction to Artificial Intelligence", "6-May"),
-("C212",       "Networks and Communications",             "10-May"),
-("C233",       "Computational Techniques",                "12-May"),
-("C221=MC221", "Compilers",                               "16-May")
-]
 
 timetable = Timetable()
 plan = Plan()
