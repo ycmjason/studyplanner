@@ -4,7 +4,7 @@ import datetime
 
 REVISION_START_DATE = datetime.date(2016, 3, 28)
 
-TURBO_MODE_DAYS = 4
+TURBO_MODE_DAYS = 3
 
 exams = [
 ("C220=MC220", "Software Engineering Design",             "25-Apr"),

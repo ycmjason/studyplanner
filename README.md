@@ -25,6 +25,8 @@ Look at the configuration section in the `studyplan.py`.
 	]
 This is an example showing how to configure the script to generate your perfect/imperfect study plan. After configuring, simply do `python studyplan.py > studyplan.txt` which will then export a file called `studyplan.txt` which contains the studyplan.
 
+`TURBO_MODE_DAYS` specifies how many days before the exam must you study that subject.
+
 Sample output with the sample configuration
 ---------
 	2016-03-28   Revise   [C221=MC221] Compilers (Day 1)
